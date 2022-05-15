@@ -16,6 +16,12 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "paths": {
+      "security": [
+        "dist/security/security",
+        "dist/security"
+      ]
+    },
     "target": "es2017",
     "module": "es2020",
     "lib": [
