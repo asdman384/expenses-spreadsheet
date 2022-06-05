@@ -2,11 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>ExpensesSpreadsheet</title>
+    <title>Expenses Spreadsheet</title>
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script type="text/javascript">
+      var onGsiLoaded;
+      var onApiLoaded;
+      const gsiLoaded = new Promise((resolve) => (onGsiLoaded = resolve));
+      const apiLoaded = new Promise((resolve) => (onApiLoaded = resolve));
+    </script>
+    <script
+      async
+      defer
+      src="https://accounts.google.com/gsi/client"
+      onload="onGsiLoaded()"
+    ></script>
+    <script
+      async
+      defer
+      src="https://apis.google.com/js/api.js"
+      onload="onApiLoaded()"
+    ></script>
   </head>
   <body>
     <app-root></app-root>

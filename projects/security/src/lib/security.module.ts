@@ -1,16 +1,7 @@
 import { NgModule } from '@angular/core';
-import { SecurityComponent } from './security.component';
-
-
 
 @NgModule({
-  declarations: [
-    SecurityComponent
-  ],
-  imports: [
-  ],
-  exports: [
-    SecurityComponent
-  ]
+  declarations: [],
+  imports: [],
 })
-export class SecurityModule { }
+export class SecurityModule {}
